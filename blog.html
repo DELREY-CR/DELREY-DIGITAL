@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Artículos y guías de DelRey DIGITAL sobre diseño web, SEO y transformación digital.">
+  <title>Blog | DelRey DIGITAL</title>
+  <link rel="preload" href="CSS/style.css" as="style"> <!-- Mejora el rendimiento al cargar CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="img/logo.JPG" alt="Logo DelRey DIGITAL" class="logo">
+    <h1 class="titulo">Blog con recursos para impulsar tu negocio <span>DelRey DIGITAL</span></h1>
+  </header>
+
+  <!-- Navegación unificada -->
+
+  <nav class="navegacion-principal">
+    <a href="index.html">Inicio</a> <!-- Enlace de navegación -->
+    <a href="Servicios.html">Servicios</a> <!-- Enlace de navegación -->
+    <a href="blog.html">Blog</a> <!-- Enlace de navegación -->
+    <a href="index.html">Contacto</a><!-- Enlace de navegación -->
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <section aria-labelledby="lista-articulos"> <!-- Sección de artículos del blog -->
+      <h2 id="lista-articulos">Últimos artículos</h2>
+
+      <!-- Artículo 1 -->
+      <article>
+        <header>
+          <h3><a href="Articulo1.html">Cómo crear tu primer sitio web desde cero</a></h3>
+          <p><time datetime="2024-06-10">10 de junio de 2024</time></p>
+        </header>
+
+        <a href="Articulo1.html">
+          <img src="img/blog-articulo1.jpg" alt="Portada del artículo sobre crear tu primer sitio web" width="320"
+            height="180" loading="lazy" decoding="async">
+        </a>
+
+        <p>Planificación, estructura, contenidos y publicación: una guía clara para lanzar tu web sin enredos.</p>
+        <p><a href="Articulo1.html">Leer más</a></p>
+      </article>
+
+      <!-- Artículo 2 -->
+      <article>
+        <header>
+          <h3><a href="blog-articulo2.html">SEO básico para pymes: empieza aquí</a></h3>
+          <p><time datetime="2024-10-10">10 de octubre de 2024</time></p>
+          <!-- Verifica que la fecha de publicación sea la correcta; actualízala si es necesario -->
+        </header>
+
+        <a href="blog-articulo2.html">
+          <img src="img/blog-seo-basico.jpg" alt="Ilustración sobre posicionamiento SEO" width="320" height="180"
+            loading="lazy" decoding="async">
+        </a>
+
+        <p>Aprende a optimizar títulos, descripciones, imágenes y contenidos para aparecer mejor en Google.</p>
+        <p><a href="blog-articulo2.html">Leer más</a></p>
+      </article>
+
+      <!-- Artículo 3 -->
+      <article>
+        <header>
+          <h3><a href="blog-articulo3.html">Herramientas para digitalizar tu negocio</a></h3>
+          <p><time datetime="2024-08-22">22 de agosto de 2024</time></p>
+        </header>
+
+        <a href="blog-articulo3.html">
+          <img src="img/blog-herramientas.jpg" alt="Herramientas digitales para gestión de pymes" width="320"
+            height="180" loading="lazy" decoding="async">
+        </a>
+
+        <p>Una selección práctica de apps para productividad, comunicación y automatización en pymes.</p>
+        <p><a href="blog-articulo3.html">Leer más</a></p>
+      </article>
+    </section>
+
+  </main>
+  <!-- Pie de página -->
+  <footer>
+    <p>© <span id="year"></span> DelRey DIGITAL — Todos los derechos reservados</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+
+</html>

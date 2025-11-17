@@ -1,0 +1,85 @@
+:root {
+    --color-primario: #535353;
+    --color-secundario: #2c2e41;
+    --color-terciario: #f2f2f2;
+    --color-fondo: #d6d9d4;
+    --color-texto: #03111f;
+    --fuente-tam-principal: 2em;
+    --text-align: center;
+    --fuente-principal: 'poppins', sans-serif;
+} /* Variables CSS para colores y fuentes */
+
+html {font-size: 62.5%;} /* 1rem = 10px */
+
+body {font-size: 16px;} /* Sirve para que el texto se adapte a distintas pantallas */ 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    max-height: 8rem;
+    width: auto;
+    object-fit: contain;
+}
+
+.titulo {
+    font-size: var(--fuente-tam-principal);
+    color: var(--color-primario);
+    text-align: var(--text-align);
+    -ms-text-align-last: center; /* IE compatibility */
+    text-align-last: var(--text-align); /* standard property */
+    font-family: var(--fuente-principal);
+} 
+
+.titulo span {
+    font-size: 1rem;
+    color: #5d5613;
+    text-align: center;
+}
+
+
+.navegacion-principal {
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.navegacion-principal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: var(--fuente-principal);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    transition: background-color 160ms ease, color 160ms ease;
+    
+}
+.navegacion-principal a:hover,
+.navegacion-principal a:focus-visible,
+.navegacion-principal a:active {
+    color: #000000;
+    background-color: #bbb997;
+    border-radius: 0.5rem;
+}
+
+/* Foco accesible como respaldo en navegadores sin :focus-visible */
+.navegacion-principal a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+    }
+}

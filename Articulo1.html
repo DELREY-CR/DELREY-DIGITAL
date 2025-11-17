@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Artículo del blog de DelRey DIGITAL sobre desarrollo web, marketing digital y transformación digital.">
+  <title>Título del artículo | Blog DelRey DIGITAL</title>
+  <link rel="preload" href="CSS/style.css" as="style"> <!-- Mejora el rendimiento al cargar CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <!-- Encabezado del sitio -->
+  <header>
+    <img src="img/logo.JPG" alt="Logo DelRey DIGITAL" class="logo">
+    <h1>Blog de DelRey DIGITAL</h1>
+    <p>Consejos y recursos para potenciar tu presencia digital.</p>
+  </header>
+
+  <!-- Menú principal -->
+
+  <nav class="navegacion-principal">
+    <a href="index.html">Inicio</a> <!-- Enlace de navegación -->
+    <a href="Servicios.html">Servicios</a> <!-- Enlace de navegación -->
+    <a href="blog.html">Blog</a> <!-- Enlace de navegación -->
+    <a href="index.html#contacto">Contacto</a><!-- Enlace de navegación -->
+  </nav>
+
+  <!-- Contenido principal del artículo -->
+  <main>
+    <article>
+      <header>
+        <h2 class="subtitulos">Título del artículo aquí</h2>
+        <p><time datetime="2025-10-17">17 de octubre de 2025</time></p>
+      </header>
+
+      <img src="img/blog-ejemplo.jpg" alt="Imagen principal del artículo" width="600" height="300" loading="lazy"
+        decoding="async">
+
+      <p>
+        Introduce aquí tu texto principal. Explica el tema, comparte tu experiencia o los pasos que el lector debe
+        seguir.
+        Este será el cuerpo de tu artículo. Puedes incluir párrafos, subtítulos e imágenes adicionales si lo deseas.
+      </p>
+
+      <h3>Subtítulo o sección</h3>
+      <p>
+        Desarrolla aquí una parte específica del artículo. Por ejemplo, podrías hablar sobre un concepto, herramienta o
+        consejo.
+      </p>
+
+      <h3>Conclusión o cierre</h3>
+      <p>
+        Finaliza con un resumen, reflexión o invitación a seguir tus redes. Esto ayuda a conectar mejor con tus
+        lectores.
+      </p>
+
+      <p><a href="blog.html">⬅ Volver al blog</a></p>
+
+      <!-- Sección de comentarios -->
+      <section id="comentarios">
+        <h3>Deja tu comentario</h3>
+        <!-- TODO: Añade la URL de procesamiento en el atributo action o implementa el manejo con JavaScript -->
+        <form action="#">
+          <fieldset>
+            <legend>Tu opinión nos importa</legend>
+
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div>
+              <label for="mensaje">Comentario:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Enviar comentario</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- Sección de contacto y redes sociales -->
+      <section id="contacto-redes">
+        <h3>Conéctate conmigo</h3>
+        <p>Sigue las novedades de <strong>DelRey DIGITAL</strong> o contáctame directamente:</p>
+
+        <div>
+          <a href="https://www.instagram.com/delrey.travels" target="_blank" rel="noopener noreferrer">
+            <img src="img/instagram.jpg" alt="Instagram" width="30" height="30">
+          </a>
+
+          <a href="mailto:contacto@tudominio.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/correo.jpg" alt="Correo electrónico" width="30" height="30">
+          </a>
+
+          <a href="https://www.flickr.com/photos/198182539@N03/" target="_blank" rel="noopener noreferrer">
+            <img src="img/blog-fotos.jpg" alt="Flickr" width="30" height="30">
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© <span id="year"></span> DelRey DIGITAL — Todos los derechos reservados</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+
+</html>
