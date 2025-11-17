@@ -35,14 +35,6 @@ header {
     text-align-last: var(--text-align); /* standard property */
     font-family: var(--fuente-principal);
 } 
-
-.titulo span {
-    font-size: 1rem;
-    color: #5d5613;
-    text-align: center;
-}
-
-
 .navegacion-principal {
     background-color: var(--color-secundario);
     padding: 1rem;
