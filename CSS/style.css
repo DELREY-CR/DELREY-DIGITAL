@@ -40,7 +40,7 @@ header {
     padding: 1rem;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 .navegacion-principal a {
@@ -70,11 +70,6 @@ header {
     outline-offset: 2px;
 }
 
-@media (min-width: 768px) {
-    .navegacion-principal {
-        flex-direction: row;
-    }
-}
 
 
 /*clases reutilizables /* .precio */
@@ -85,3 +80,5 @@ header {
     color: var(--color-primario);
     margin-top: 1rem;
 }
+
+/* Botón para volver arriba */

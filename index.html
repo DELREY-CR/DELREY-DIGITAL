@@ -11,6 +11,7 @@
     <!-- Etiqueta muy importante para SEO -->
     <link rel="preload" href="CSS/style.css" as="style"> <!-- Mejora el rendimiento al cargar CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 
 <body>
@@ -18,6 +19,7 @@
     <header> <!-- Encabezado de la página -->
         <img src="img/logo.JPG" alt="Logo DelRey DIGITAL" class="logo">
         <h1 class="titulo">Desarrollo web y Marketing Digital</h1>
+        <header id="inicio"></header>
     </header>
 
     <nav class="navegacion-principal contenedor">
@@ -135,7 +137,8 @@
             document.getElementById('year').textContent = new Date().getFullYear();
         </script>
     </footer>
-
+<!-- Botón para volver al inicio -->
+<a href="#inicio" class="btn-arriba" id="btnArriba">↑</a>
 </body>
 
 </html>
